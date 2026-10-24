@@ -1,10 +1,111 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Lab03_1</title>
+<meta charset="UTF-8">
+<title>Lab03_1</title>
 </head>
+<style>
+a
+{
+font-size: 20px;
+display: flex;
+justify-content: center;
+font-weight: bond;
+}
+body
+{
+display: flex;
+font-family: Arial;
+background-color: lightgrey;
+justify-content: center;
+}
+form
+{
+background-color: white;
+padding: 30px;
+width: 300px;
+border-radius: 12px;
+}
+input:not([type="checkbox"])
+{
+font-size: 14px;
+margin-bottom: 9px;
+padding: 6px;
+width:90%;
+border-radius: 6px;
+border-style: solid;
+border-color: lightgrey;
+}
+
+select
+{
+font-size: 14px;
+margin-bottom: 9px;
+padding: 6px;
+width:96%;
+border-radius: 6px;
+border-style: solid;
+border-color: lightgrey;
+border-width: 2px;
+}
+input[type="submit"]
+{
+allign-items: center;
+background-color:LightSkyBlue;
+padding: 12px;
+color: white;
+font-weight: bond;
+font-size: 18px;
+border-radius: 10px;
+border: 0px;
+width: 100%;
+}
+input[type="checkbox"]
+{
+font-size: 14px;
+margin-bottom: 15px;
+}
+input[type="submit"]:hover
+{
+background-color:steelblue;
+}
+</style>
+
 <body>
-  
+<form action="" method="">
+<a>FORMULARZ</a><BR>
+  Imie: <input type="text" name="imie"> <br>
+  Nazwisko: <input type="text" name="nazwisko"> <br>
+  Ulica: <input type="text" name="ulica"> <br>  
+  Miasto: <input type="text" name="miasto"> <br>
+  Data urodzenia: <input type="date" name="data"> <br>  
+  Telefon: <input type="tel" name="telefon" maxlength="9" pattern="[0-9]{9}"> <br>  
+  Województwo: 
+  <select name="wojewodztwo">
+    <option value="mazowieckie">Mazowieckie</option>
+    <option value="dolnoslaskie">Dolno Śląskie</option>
+    <option value="kujawskopomorskie">Kujawsko-pomorskie</option>
+    <option value="lubuskie">Lubuskie</option>
+    <option value="lubelskie">Lubelskie</option>
+    <option value="lodzkie">Łódzkie</option>
+    <option value="malopolskie">Małopolskie</option>
+    <option value="opolskie">Opolskie</option>
+    <option value="podkarpacie">Podkarpackie></option>
+    <option value="podlaskie">Podlaskie</option>
+    <option value="pomorskie">Pomorskie</option>
+    <option value="slaskie">Śląskie</option>
+    <option value="swietokrzyskie">Świętokrzyskie</option>
+    <option value="warminsko-mazurskie">Warmińsko-mazurskie</option>
+    <option vlaue="wielkopolskie">Wielkopolskie</option>
+    <option value="zachodniopomorskie">Zachodniopomorskie</option>
+  </select>
+  <br>
+  Hasło: <input type="password" name="haslo"> <br>
+  Email: <input type="email" name="email"> <br>  
+  Prawo jazdy: <input type="checkbox" name="prawojazdy"> <br>  
+<input type="submit" value="OK" name="p1">
+</form>
+
+
 </body>
 </html>
